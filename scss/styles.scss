@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1A2A33;
+    height: 100vh;
+}
+
+main{
+    padding-top: 30px;
+}
+
+.title{
+    text-align: center;
+    color: #A8BFC9;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 350px;
+    margin: auto;
+}
+
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    background-color: #1F3641;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+
+.tile{
+    width: 40px;
+}
+
+.modal-bg{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    margin: auto;
+    padding: 40px;
+    background-color: #1F3641;
+    top: 30%;
+    font-family: 'Outfit', sans-serif;
+
+    &-title{
+        color: #A8BFC9;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+.modal-active{
+    display: block;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+
+.btn{
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0px -4px 0px #6B8997;;
+}
+
+.btn-primary{
+    background-color: #A8BFC9;
+    margin-right: 1rem;
+}
+
+.btn-secondary{
+    background-color: #F2B137;
+}
